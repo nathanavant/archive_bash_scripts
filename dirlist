@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#dirlist - creates standard SN folder structure
+
+cat /Users/navant/Documents/bin/files/dirlist.txt | xargs mkdir
+

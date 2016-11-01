@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#checksums - creates CSV file with filenames and MD5 checksums for all files in directory
+DIR=.
+
+rhash -r --md5 -p "%f, %m \n" "$DIR" >> file_inventory.csv

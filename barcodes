@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#barcodes - makes all the folders from a txt file
+
+cat barcodes.txt | xargs mkdir
+rm barcodes.txt

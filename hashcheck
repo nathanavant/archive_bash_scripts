@@ -1,0 +1,13 @@
+#!/bin/bash
+# verifies an MHL hash list against folder contents
+
+echo GIMME THAT MHL FILE!
+
+read varname
+
+date
+pwd
+mhl verify -v -f $varname
+
+
+
