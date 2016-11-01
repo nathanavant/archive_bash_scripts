@@ -7,4 +7,4 @@ dirlist - creates a series of directories at the location it is run, according t
 
 checksums - creates md5 checksums for all files in a directory, creates a csv file listing the file names and their checksums
 
-
+Hashcheck - verifies an MHL hash list against folder contents (incomplete)
