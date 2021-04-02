@@ -1,0 +1,1 @@
+for file in *.mkv; do ffmpeg -i "$file" -c:v libx264 -pix_fmt yuv420p -preset veryslow -crf 18 -c:a aac "${file%.mp4}.mov"; done
