@@ -171,3 +171,13 @@ DIR=.
  
 
 rhash -r --md5 -p "%f, %m \n" "$DIR" >> file_inventory.csv
+
+
+Batchconvert
+
+#!/bin/bash
+
+#batchconvert - transcodes all avi files in a folder into high quality h264 mp4s
+
+for file in *.avi; do ffmpeg -i "$file" ffmpeg -i input_file -c:v libx264 -pix_fmt yuv420p -preset veryslow -crf 18 $
+
